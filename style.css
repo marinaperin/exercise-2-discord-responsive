@@ -333,11 +333,15 @@ footer .indigo-buttons {
     nav {
         margin-inline: 2%;
     }
+    .nav-right{
+        display: flex;
+        gap: 1rem;
+    }
     .dropdown-navbar {
         display: unset;
     }
     .links {
-        visibility: hidden;
+        display: none;
     }
     .background{
         width: 100%;
@@ -409,5 +413,103 @@ footer .indigo-buttons {
 }   
 
 @media (max-width: 480px) {
-    
+    body {
+        width: 100%;
+    }
+    img{
+        max-width: 100%;
+    }
+    nav {
+        margin-inline: 1%;
+    }
+    header {
+        width: 100%;
+        background-image: none;
+        background-position: center;
+
+    }
+    .background{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        bottom: 0;
+        right: 0;
+    }
+    .hero-left {
+        display: unset;
+        justify-content: center;
+        width: 70%;
+    }
+    .hero-right {
+        display: none;
+    } 
+    .jumbotron {
+        height: 630px;
+    }
+    .jumbo-text {
+        text-align: start;
+        justify-content: start;
+        width: 100%;
+        padding-inline: 4%;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    .jumbo-text p {
+        font-size: .9rem;
+        margin-left: 0;
+        padding-right: 2rem;
+    }
+    .horizontal {
+        flex-direction: column;
+        text-align: start;
+        padding-inline: 6%;
+        padding-block: 3rem;
+    }
+    main>:nth-child(2){
+        flex-direction: column;
+        font-size: 1rem;
+    }
+    main h2 {
+        font-size: 1.2rem;
+        text-align: start;
+        padding-top: 1rem;
+    }
+    main p {
+        font-size: .8rem;
+        line-height: 1.8;
+        text-align: start;
+    }
+    .text-block{
+        width: 100%;
+        margin-left: 0;
+    }
+    .text-block-reverse{
+        width: 100%;
+        margin-right: 0;
+    }
+    #stars {
+        width: 100%;
+    }
+    #vertical-info {
+        padding: 3rem 0;
+        padding-inline: 6%;
+    }
+    #vertical-info button {
+        width: 100%;
+        justify-content: center;
+    }
+    footer {
+        font-size: .8rem;
+    }
+    .main-footer{
+        padding-inline: 4%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .footer-right{
+        margin-left: -2.3rem;
+        gap: 2rem;
+    }
 }
